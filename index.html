@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>16 dana aktivizma u Srbiji2025</title>
+<style>
+/* Scoped styles for bilingual agenda */
+#bilingual-agenda * { box-sizing: border-box; }
+#bilingual-agenda {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #15568A;
+  color: #FFF;
+  line-height: 1.5;
+  text-align: justify;
+}
+#bilingual-agenda .newsletter-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #168ECE;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  animation: fadeIn 0.8s ease-out;
+}
+#bilingual-agenda .toggle-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#bilingual-agenda .lang-toggle-btn {
+  background: #37B9C5;
+  color: #FFF;
+  border: none;
+  padding: 8px 18px;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#bilingual-agenda .lang-toggle-btn.active,
+#bilingual-agenda .lang-toggle-btn:focus {
+  background: #FFD322;
+  color: #183C6C;
+  outline: none;
+}
+#bilingual-agenda .print-btn {
+  background: #FF6B6B;
+  color: #FFF;
+  border: none;
+  padding: 8px 18px;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#bilingual-agenda .print-btn:hover {
+  background: #FF5252;
+}
+#bilingual-agenda .banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  border-radius: 6px;
+}
+#bilingual-agenda .date-header {
+  font-weight: bold;
+  font-size: 22pt;
+  color: #FFF;
+  margin-top: 30px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  /* border-bottom: 3px solid #FFD322; */
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background-color: #C03353;
+  text-align: left;
+}
+#bilingual-agenda .programme-header {
+  display: inline-block;
+  background-color: #F7A81F !important;
+  border-bottom: none !important;
+  padding: 0 16px;
+  box-shadow: none !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+#bilingual-agenda .time {
+  font-weight: bold;
+  font-size: 16pt;
+  color: #FDC61D;
+  margin: 15px 0 8px 0;
+  padding-left: 5px;
+  border-left: 4px solid #FDC61D;
+}
+#bilingual-agenda .body-text {
+  font-size: 12pt;
+  color: #FFF;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+#bilingual-agenda .event {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #0E72BA;
+  border-radius: 5px;
+  border-left: 4px solid #FDC61D;
+  position: relative;
+  overflow: hidden;
+}
+#bilingual-agenda .lokacija {
+  font-size: 12pt;
+  color: #FFF;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.6;
+  border-left: 4px solid #FFF;
+  padding-left: 5px;
+}
+#bilingual-agenda .footer {
+  height: 100px;
+  background-color: #0E72BA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+}
+#bilingual-agenda .footer p,
+#bilingual-agenda .footer a {
+  margin: 0;
+  color: #FFF;
+  text-decoration: none;
+}
+@media (max-width: 950px) {
+  #bilingual-agenda .newsletter-container { max-width: 100%; padding: 10px; }
+  #bilingual-agenda .date-header { font-size: 18pt; }
+  #bilingual-agenda .time { font-size: 14pt; }
+}
+@media (max-width: 600px) {
+  #bilingual-agenda { text-align: left; }
+  #bilingual-agenda .date-header { font-size: 16pt; }
+  #bilingual-agenda .time { font-size: 12pt; }
+}
+@keyframes fadeIn {
+  from { opacity: 0.8; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+<div id="bilingual-agenda">
+  <div class="newsletter-container">
+    <div class="toggle-header" role="group" aria-label="Language toggle">
+      <button class="lang-toggle-btn active" id="btn-eng" aria-pressed="true" onclick="switchLang('en')">ENG</button>
+      <button class="lang-toggle-btn" id="btn-srb" aria-pressed="false" onclick="switchLang('srb')">SRB</button>
+      <button class="print-btn" id="print-btn" onclick="printAgenda()" style="display:none;">PRINT</button>
+    </div>
+    <!-- English Banner & Agenda -->
+<div id="agenda-en" lang="en">
+      <img class="banner" src="banner.jpg" alt="European Green Diplomacy Week Banner">
+      <!-- ENGLISH CONTENT START -->
+      <div class="date-section">
+        <p class="date-header programme-header">PROGRAMME</p>
+        <!-- NEW EVENTS START -->
+        <div class="date-section">
+          <p class="date-header">25 November – Tuesday</p>
+          <div class="event">
+            <p class="time">18:00 – 19:00 WomCom (Women Power in Comics) Exhibition and interactive activity with women comic book artists</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Women Power in Comics (WOMCOM) is a collaborative initiative involving partners from Serbia, Hungary, Slovenia, Greece, Croatia, and Montenegro. This Creative Europe project aims to foster collaboration and engagement among comic authors and illustrators with the goal of investigating and addressing gender issues in comics as well as empowering female comic artists through residencies, exhibitions, and conferences.</p>
+          </div>
+          <div class="event">
+            <p class="time">16:00 – 18:30 WomCom (Women Power in Comics) Exhibition and Comic Book Workshop</p>
+            <p class="lokacija">Europe House Niš and Street Gallery Mezanine</p>
+            <p class="body-text">Women Power in Comics (WOMCOM) exhibition will be held at Europe House Niš and Street Gallery Mezanine, together with comic book workshop with students from the Art School in Niš.</p>
+          </div>
+          <div class="event">
+            <p class="time">00:00 – 00:00 Opens Youth Centre</p>
+            <p class="lokacija">Opens Youth Centre Novi Sad</p>
+            <p class="body-text">Training for Volunteers of the “Constellation of Support” Network; Youth Workshop and Film Screening “Boundaries of Violence – Confronting Stereotypes through Film”.</p>
+          </div>
+          <div class="event">
+            <p class="time">00:00 – 00:00  Youth Gender Equality Education Program</p>
+            <p class="lokacija">EU Corner SOMBOR in Sombor Educational Centre</p>
+            <p class="body-text">Gender Equality and Peer Violence Prevention Workshops; Youth Training on Global Education; Children’s Drama Workshops; Youth Workshops - Music Plays.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">26 November – Wednesday</p>
+          <div class="event">
+            <p class="time">20:00 – 21:30 Theatre performance Sve dobre barbike</p>
+            <p class="lokacija">Hartefakt House, Bulevar despota Stefana 7, Belgrade</p>
+            <p class="body-text">The main character, Vanja, goes through a whirlwind of fears, internal dilemmas and harsh reality. In this chaos, she tries to find reasons to live, while simultaneously feeling and realizing the meaninglessness that surrounds her. We are giving away 15 tickets for this performance.</p>
+          </div>
+          <div class="event">
+            <p class="time">00:00 – 00:00  Gender Representation and Positioning in Art and Culture</p>
+            <p class="lokacija">Bulevar Books, Novi Sad</p>
+            <p class="body-text">Gender Representation and Positioning in Art and Culture is part of Europe House Novi Sad monthly series Open Studio Europe, participating Jeanne Mordoj, French artist, living in Serbia, Andreja Kuleševi?, prima ballerina of the Serbian National Theatre and French Institute in Novi Sad.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">28 November – Friday</p>
+          <div class="event">
+            <p class="time">19:00 – 20:30 Friday Movie Nights + Beldocs – Radio Silence (d. Juliana Fanjul, 2019) 78'</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">In March 2015, due to political pressure and false pretenses, Carmen Aristegui, the main voice of independent journalism in Mexico, is fired with her team from the MVS Radio station. The next day more than 200,000 people demonstrate and sign a petition calling for her return on air and the end of censorship. Despite this exceptional mobilization, the station does not give way.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">29 November – Saturday</p>
+          <div class="event">
+            <p class="time">20:00 – 21:30 Theatre performance Kako sam naucila da vozim</p>
+            <p class="lokacija">Hartefakt House, Bulevar despota Stefana 7, Belgrade</p>
+            <p class="body-text">The play by Pola Vogel is compared to "Lolita", but written from a female perspective, a woman called Malecka, who recalls her childhood. We are giving away 8 tickets for this performance.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">2 December – Tuesday</p>
+          <div class="event">
+            <p class="time">18:00 – 19:00 Photo Exhibition 16 Male Voices Against Gender-Based Violence</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Opening of the photo exhibition 16 Male Voices Against Gender-Based Violence organised ba the Embassy of Sweden in Belgrade.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">3 December – Wednesday</p>
+          <div class="event">
+            <p class="time">18:00 – 19:00 Anti-sexism Wall</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">This interactive installation by We Balkans, Young European Ambassadors and Council of Europe in Belgrade, aims to raise awareness about sexism and gender-based violence, while emphasizing the importance of solidarity and support for women and girls.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">4 December – Thursday</p>
+          <div class="event">
+            <p class="time">16:00 – 19:00 How Do We Build Networks of Resistance?</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Series of activities organized by BeFeM, Femcheck and Feminizam iz teretane: Pprformance “(Don’t) Be Afraid of the Dark” questioning the right to safety both offline and online; Speed Dating with Feminists – an interactive session connecting the audience with activists, artists, journalists, and influencers fighting male violence, especially those engaged in digital activism; and film Screening - Leila Ruždi? Trifunovi? (BeFem production).</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">8 December – Monday</p>
+          <div class="event">
+            <p class="time">14:00 – 16:00 Women's Civil Society Soundboard - Growth Plan & Reform Agenda (Kvinna till Kvinna)</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">The Kvinna till Kvinna Foundation along with partner organisations hosts an annual Women's Civil Society Soundboard (WCSS) in partnership with the EU Delegation to Serbia and Member States' Deputy Heads of Missions. Each WCSS spotlights and addresses a different form of GBV and this year the theme will be, with EU Fundamentals, the Growth Plan and Reform Agenda and how they address GBV on paper versus in practice.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">9 December – Tuesday</p>
+          <div class="event">
+            <p class="time">12:00 – 13:00 Panel Discussion Combating Disinformation and Hate Speech: A Danish-Serbian Dialogue</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Verbal violence, hate speech, and disinformation are also central challenges to democratic dialogue and social trust in both, Denmark and Serbia. This event will bring together Danish and Serbian voices: survivors, media professionals, academics, civil society representative, and young voices (YEAs), to explore how societies can respond to verbal violence without compromising freedom of expression.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">10 December – Wednesday</p>
+          <div class="event">
+            <p class="time">17:30 – 19:30 Theatre performance Kako je Crvenkapa preživela vuka po drugi put</p>
+            <p class="lokacija">National Theatre in Niš</p>
+            <p class="body-text">The performance was funded by Erasmus+ and produced by Group Hade da…. After the performance, the conversation with elementary school pupils will be held.</p>
+          </div>
+          <div class="event">
+            <p class="time">19:00 – 20:30 Books in Spotlight - Girl by Edna O’Brien (Štrik Publishing House)</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Girl is harrowing portrayal of the young women abducted by Boko Haram, written by Irish author Edna O'Brien's. Books in Spotlight are organized in partnership with Creative Europe Desk Srbija, Faculty of Philology and Philology Gymnasium.</p>
+          </div>
+        </div>
+        <!-- NEW EVENTS END -->
+      </div>
+      <!-- ENGLISH CONTENT END -->
+      <div class="footer">
+        <a href="http://www.europa.rs">www.europa.rs</a>
+        <a href="https://evropskakuca.rs">www.evropskakuca.rs</a>
+      </div>
+    </div>
+    <!-- Serbian Banner & Agenda -->
+<div id="agenda-srb" lang="sr" style="display:none;">
+      <img class="banner" src="banner-srb.jpg" alt="Evropska nedelja zelene diplomatije">
+      <!-- SERBIAN CONTENT START -->
+      <div class="date-section">
+        <p class="date-header programme-header">PROGRAMME</p>
+        <!-- NOVI DOGAĐAJI START -->
+        <div class="date-section">
+          <p class="date-header">25. novembar – utorak</p>
+          <div class="event">
+            <p class="time">18.00 – 19.00 WomCom (Women Power in Comics) izložba i interaktivna aktivnost sa strip umetnicama</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Moć žena u stripu (WOMCOM) je zajednička inicijativa umetnica iz Srbije, Mađarske, Slovenije, Grčke, Hrvatske i Crne Gore. Ovaj projekat Kreativne Evrope ima za cilj podsticanje saradnje i angažovanja među strip umetnicama, istraživanje rodnih pitanja u stripu, kao i osnaživanja žena strip umetnica kroz rezidencije, izložbe i konferencije..</p>
+          </div>
+          <div class="event">
+            <p class="time">16.00 – 18.30 WomCom (Women Power in Comics) izložba i radionica stripa</p>
+            <p class="lokacija">Evropska kuća Niš i Ulična galerija Mezanine</p>
+            <p class="body-text">Izložba Moć žena u stripu (WOMCOM) i stripa radionica biće ordžani u Evropskoj kući u Nišu, Uličnoj galeriji Mezanina, u kom će učestvovati učenici Umetničke škole u Nišu.</p>
+          </div>
+          <div class="event">
+            <p class="time">00:00 – 00:00 Opens omladinski centar</p>
+            <p class="lokacija">Opens omladinski centar Novi Sad</p>
+            <p class="body-text">Trening za volontere Mreže „Sazvežđe podrške“, radionica za mlade i projekcija filma „Granice nasilja – suočavanje sa stereotipima kroz film ”.</p>
+          </div>
+          <div class="event">
+            <p class="time">00:00 – 00:00  Program obrazovanja mladih o rodnoj ravnopravnosti</p>
+            <p class="lokacija">EU Corner SOMBOR u Somborskom edukativnom centru</p>
+            <p class="body-text">Radionice o rodnoj ravnopravnosti i prevenciji vršnjačkog nasilja; Obuka mladih o globalnom obrazovanju; Dečje dramske radionice; Radionice za mlade - muzičke predstave.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">26. novembar – sreda</p>
+          <div class="event">
+            <p class="time">20:00 – 21:30 Pozorišna predstava Sve dobre barbike</p>
+            <p class="lokacija">Hartefakt kuća u Beogradu, Bulevar despota Stefana 7</p>
+            <p class="body-text">Glavna junakinja, Vanja, prolazi kroz vrtlog strahova, unutrašnjih dilema i surove stvarnosti. U tom haosu, ona pokušava da pronađe razloge za život, dok istovremeno oseća i spoznaje besmisao koji je okružuje. Vanja se ukazuje kao hor mladih ljudi – kolektivni glas koji otkriva svoje unutrašnje svetove, pruža utehu, i poručuje: nisi sam. Poklanjamo  We are giving away 15  karata za ovu predstavu.</p>
+          </div>
+          <div class="event">
+            <p class="time">00:00 – 00:00  Rodna reprezentacija i pozicioniranje u umetnosti i kulturi</p>
+            <p class="lokacija">Bulevar Books, Novi Sad</p>
+            <p class="body-text">Rodna reprezentacija i pozicioniranje u umetnosti i kulturi deo je mesečnog ciklusa Evropske kuće Novi Sad Otvoreni studio Evropa, u kojem učestvuju Žan Mordoj, francuska umetnica koja živi u Srbiji, Andreja Kulešević, primabalerina Srpskog narodnog pozorišta i Francuski institut u Novom Sadu.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">28. novembar – petak</p>
+          <div class="event">
+            <p class="time">19.00 – 20.30 Filmski petak + Beldocs – Radijska tišina (r. Juliana Fanjul, 2019) 78'</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Marta 2015. godine, zbog političkog pritiska i pod lažnim izgovorima, Karmen Aristegi, glavni glas nezavisnog novinarstva u Meksiku, otpuštena je sa svojim timom iz radio-stanice MVS. Sledećeg dana više od 200.000 ljudi demonstrira i potpisuje peticiju kojom poziva na njen povratak u etar i kraj cenzure. Uprkos ovoj izuzetnoj mobilizaciji, stanica ne popušta.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">29. novembar – subota</p>
+          <div class="event">
+            <p class="time">20.00 – 21:30 Pozorišna predstava Kako sam naučila da vozim</p>
+            <p class="lokacija">Hartefakt kuća u Beogradu, Bulevar despota Stefana 7</p>
+            <p class="body-text">„Kako sam naučila da vozim“ Pole Vogel, tekst je koji mnogi nazivaju „Lolitom“ napisanom iz ženske perspektive – lika odrasle Malecke, koja se priseća svog detinjstva. Poklanjamo osam (8) karata za pozorišnu predstavu.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">2. decembar – utorak</p>
+          <div class="event">
+            <p class="time">18.00 – 19.00 Foto izložba Photo 16 muških glasova protiv rodno zasnovanog nasilja</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Otvaranje izložbe fotografija „16 muških glasova protiv rodno zasnovanog nasilja“ u organizaciji Ambasade Švedske u Beogradu.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">3. decemabar – sreda</p>
+          <div class="event">
+            <p class="time">18.00 – 19.00 Zid protiv seksizma</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Ova interaktivna instalacija organizacija u organizaciji We Balkans, Young European Ambassadors i Saveta Evrope u Beogradu ima za cilj da podigne svest o seksizmu i rodno zasnovanom nasilju, istovremeno ističući značaj solidarnosti i podrške ženama i devojčicama.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">4. decembar – četvrtak</p>
+          <div class="event">
+            <p class="time">16.00 – 19.00 Kako gradimo mreže otpora?</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Serija aktivnosti koje organizuju BeFeM, Femcheck i Feminizam iz teretane: Performans inicijative „(Ne) plaši se mraka“ preispituje iskustvo straha i otpora žena u javnom prostoru. Speed dating sa feministkinjama je interaktivna sesija koja povezuje publiku sa aktivistima, umetnicima, novinarima i influenserima koji se bore protiv rodno zasnovanog nasilja, posebno onima koji se bave digitalnim aktivizmom; i projekcija filma - Leila Ruždić Trifunović (produkcija BeFem).</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">8. decembar – ponedeljak</p>
+          <div class="event">
+            <p class="time">14.00 – 16.00 Women's Civil Society Soundboard – Plan rasta i agenda reforme (Kvinna till Kvinna)</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">U saradnji s partnerskim organizacijama, Kvinna till Kvinna organizuje godišnji sastanak Women's Civil Society Soundboard (WCSS). Na svakom od ovih sastanaka razmatra se različiti oblik rodno zasnovanog nasilja, a ove godine tema će biti Plan rasta i Agenda reformi, odnosno, kako se rodno zasnovanim nasiljem bavimo na papiru, a kako se dešava u praksi.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">9. decembar – utorak</p>
+          <div class="event">
+            <p class="time">12.00 – 13.00 Panel diskusija Borba protiv dezinformacija i govora mržnje: Dansko-srpski dijalog</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Verbalno nasilje, govor mržnje i dezinformacije su takođe glavni izazovi demokratskom dijalogu i društvenom poverenju i u Danskoj i u Srbiji. Ovaj događaj će okupiti danske i srpske glasove: osobe koje su preživele nasilje, medijske stručnjake, akademike, predstavnike civilnog društva i mlade glasove (YEAs), kako bi se istražili načini na koje društva mogu da odgovore na verbalno nasilje bez ugrožavanja slobode izražavanja.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">10. decembar – sreda</p>
+          <div class="event">
+            <p class="time">17:30 – 19:30 Theatre performance Kako je Crvenkapa preživela vuka po drugi put</p>
+            <p class="lokacija">Narodno pozorište u Nišu</p>
+            <p class="body-text">Predstavje finansirana kroz Erazmus+, u produkciji Grupe Hade da…. Nakon predstave biće održan razgovor sa učenicima osnovne škole.</p>
+          </div>
+          <div class="event">
+            <p class="time">19.00 – 20.30 Knjige u središtu Books in Spotlight - Devojčica (Edna O’Brajen) (Izdavačka kuća Štrik)</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Devojčica je potresan portret mlade žene koju je oteo Boko Haram, irske spisateljice Edne O'Brajen. Knjige u središtu organizovane su u partnerstvu sa Kreativnom Evropom Desk Srbija, Filološkim fakultetom i Filolškom gimnazijom u Beogradu.</p>
+          </div>
+        </div>
+        <!-- NOVI DOGAĐAJI END -->
+      </div>
+      <!-- SERBIAN CONTENT END -->
+      <div class="footer">
+        <a href="http://www.europa.rs">www.europa.rs</a>
+        <a href="https://evropskakuca.rs">www.evropskakuca.rs</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchLang(lang) {
+  var en = document.getElementById('agenda-en');
+  var srb = document.getElementById('agenda-srb');
+  var btnEng = document.getElementById('btn-eng');
+  var btnSrb = document.getElementById('btn-srb');
+  if (lang === 'en') {
+    en.style.display = '';
+    srb.style.display = 'none';
+    btnEng.classList.add('active');
+    btnSrb.classList.remove('active');
+    btnEng.setAttribute('aria-pressed', 'true');
+    btnSrb.setAttribute('aria-pressed', 'false');
+  } else {
+    en.style.display = 'none';
+    srb.style.display = '';
+    btnEng.classList.remove('active');
+    btnSrb.classList.add('active');
+    btnEng.setAttribute('aria-pressed', 'false');
+    btnSrb.setAttribute('aria-pressed', 'true');
+  }
+}
+
+function printAgenda() {
+  window.print();
+}
+
+// Check if page is embedded in an iframe
+function checkIfEmbedded() {
+  if (window.self === window.top) {
+    // Not embedded, show print button
+    document.getElementById('print-btn').style.display = 'block';
+  }
+  // If embedded, print button remains hidden
+}
+
+// Run check when page loads
+window.addEventListener('load', checkIfEmbedded);
+</script>
+</body>
+</html>
